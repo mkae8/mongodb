@@ -10,14 +10,14 @@ connectDataBase();
 
 // ---> User data create hiilee
 
-// app.get("/", async (req, res) => {
-//   await UserModel.create({
-//     firstname: "5",
-//     lastname: "5",
-//     email: "5@gmail.com",
-//   });
-//   res.send("success");
-// });
+app.post("/", async (req, res) => {
+  await UserModel.create({
+    firstname: "ganba",
+    lastname: "g",
+    email: "g",
+  });
+  res.send("success");
+});
 
 // ---> Id gaar n user ee olloo
 // app.get("/:id", async (req, res) => {
